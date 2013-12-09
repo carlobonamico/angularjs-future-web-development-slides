@@ -19,7 +19,6 @@
 
     <title>Codemotion 2013 - How to code today with tomorrow tools </title>
 </head>
-<!-- ng-class="slides[currentSlide].background" -->
 <body ng-app="ngSlides"  ng-controller="presentationCtrl" ng-class="slides[currentSlide].background" >
 
 <div id="slidesContainer" class="slidesContainer" >
@@ -27,17 +26,12 @@
 
         <div ng-bind-html="slide.html"></div>
 
+        <h4 class="number">{{slide.number}}</h4>
 
     </div>
 
+    <!-- this is only to debug bindings during development -->
     <div ng-show="debugMode">
-        <h4 class="number">{{slide.number}}</h4>
-
-
-        AS IS:
-        {{slide.html}}
-
-
         {{currentSlide}}
         <button ng-click="next()">Next</button>
         <div>Debug: {{debug}}</div>
@@ -48,19 +42,3 @@
 </body>
 
 </html>
-
-<!--
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 centered">
-                <h4> <img src="../../codemotion.jpg" width="300px" height="auto"/> AngularJS QuickStart - <a href="http://milano.codemotionworld.com/"> Codemotion Milan 2013</a>
-                    - <a href="https://twitter.com/carlobonamico">@carlobonamico</a>
-                </h4>
-            </div>
-        </div>
-
-    </div>
-</footer>
-
--->

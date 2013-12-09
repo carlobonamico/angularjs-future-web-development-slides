@@ -90,17 +90,7 @@ a[href]:after {
         bottom: 10px;
         right: 50px;
     }
-/*
-    footer {
-        background-color: #888888;
-        height: 250px;
-        align-content: center;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-*/
+
     html {
         position: relative;
         min-height: 100%;
@@ -128,23 +118,9 @@ a[href]:after {
   /*      padding-bottom: 50px; */
     }
 
-    /*
-    html {
-        background: url(images/bg.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    */
+
     .slide {
         page-break-after: always;
     }
 
-    /*
-    @media print{
-        img{display:inline;}
-
-    }
-    */
 
