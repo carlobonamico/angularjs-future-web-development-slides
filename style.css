@@ -1,0 +1,126 @@
+/* Styles go here */
+
+    .slidesContainer {
+        /* background-color: green;*/
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .slide {
+        /*
+        background-color: yellow; */
+        font-size: 20pt;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+
+    pre {
+        font-size: 14pt;
+        text-align: left;
+        align-content: center;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    code {
+        font-size: 16pt;
+    }
+
+    body {
+
+    }
+
+    ul {
+        margin-left: 90px;
+
+        text-align: left;
+
+    }
+
+    .backgroundSlide {
+        background: url('images/slide.jpg') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-align: center !important;
+
+    }
+
+    .backgroundCover {
+        background: url('images/cover.jpg') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-align: center !important;
+    }
+
+    .specialEffect {
+        background: url('images/f12.png') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-align: center !important;
+
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+
+        -webkit-print-color-adjust: exact;
+
+    }
+
+a[href]:after {
+    content: none; /* " (" attr(href) ")"; */
+}
+
+    .number {
+        position: fixed;
+        bottom: 10px;
+        right: 50px;
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    .centered {
+        float: none;
+        margin: 0 auto;
+    }
+
+    h1 {
+        position: fixed;
+        top: 20px;
+        left: 250px;
+    }
+
+    h4 {
+        position: fixed;
+        bottom: 25px;
+        right: 320px;
+    }
+
+    body {
+        padding-top: 50px;
+  /*      padding-bottom: 50px; */
+    }
+
+
+    .slide {
+        page-break-after: always;
+    }
+
+

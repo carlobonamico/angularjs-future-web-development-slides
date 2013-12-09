@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="lib/bootstrap-3.0.2/css/bootstrap.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="/highlight/styles/default.css">
+
+    <link rel="stylesheet" media="all" href="style.css"/>
+
+    <script src="lib/angular-1.2.1/angular.js" defer></script>
+    <script src="lib/angular-1.2.1/angular-sanitize.js" defer></script>
+
+
+    <script src="lib/highlight/highlight.pack.js" defer></script>
+    <script src="lib/showdown/compressed/showdown.js" defer></script>
+
+    <script src="script.js" defer></script>
+
+    <title>Codemotion 2013 - How to code today with tomorrow tools </title>
+</head>
+<body ng-app="ngSlides"  ng-controller="presentationCtrl" ng-class="slides[currentSlide].background" >
+
+<div id="slidesContainer" class="slidesContainer" >
+    <div class="slide" ng-repeat="slide in slides" ng-show="print || slide.number == currentSlide" >
+
+        <div ng-bind-html="slide.html"></div>
+
+        <h4 class="number">{{slide.number}}</h4>
+
+    </div>
+
+    <!-- this is only to debug bindings during development -->
+    <div ng-show="debugMode">
+        {{currentSlide}}
+        <button ng-click="next()">Next</button>
+        <div>Debug: {{debug}}</div>
+        <div>Errors: {{error}}</div>
+    </div>
+</div>
+
+</body>
+
+</html>
